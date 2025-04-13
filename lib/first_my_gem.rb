@@ -3,6 +3,7 @@
 require_relative "first_my_gem/version"
 
 module FirstMyGem
-  class Error < StandardError; end
-  # Your code goes here...
+  def self.hello(name = "World!")
+    "Hello, #{name}!"
+  end
 end
